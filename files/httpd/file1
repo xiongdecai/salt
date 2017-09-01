@@ -1,0 +1,6 @@
+hello  dlaldld {{ pillar['test']["a"]["b"] }}
+1  {{ pillar['users']["thatch"] }}
+2
+worker_processes {{ grains['num_cpus'] }}
+3 {{ salt['pillar.get']("test:a:b") }}
+4 {{ grains['gongzi']['test1'] }}
